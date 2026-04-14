@@ -1,0 +1,1135 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Apr  3 21:45:47 2026
+# Process ID: 27460
+# Current directory: E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26312 E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.xpr
+# Log file: E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/vivado.log
+# Journal file: E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.016 ; gain = 0.000
+update_compile_order -fileset sources_1
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v}}
+update_compile_order -fileset sources_1
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v}}
+update_compile_order -fileset sources_1
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v}}
+update_compile_order -fileset sources_1
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v}}
+update_compile_order -fileset sources_1
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v} w ]
+add_files -fileset sim_1 {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v}}
+update_compile_order -fileset sim_1
+set_property top Task1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/TopLevelProcessor.v} w ]
+add_files -fileset sim_1 {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/TopLevelProcessor.v}}
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/TopLevelProcessor.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/TopLevelProcessor.v}}
+file delete -force {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/TopLevelProcessor.v}
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v}}
+update_compile_order -fileset sources_1
+set_property top TopLevelProcessor [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Task1_tb
+INFO: [VRFC 10-311] analyzing module Task1_tb
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'Task1_tb' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v:58]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Task1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Task1_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/Semester -notrace
+couldn't read file "E:/Semester": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr  3 21:59:36 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Task1_tb_behav -key {Behavioral:sim_1:Functional:Task1_tb} -tclbatch {Task1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source Task1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Task1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1027.016 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Task1_tb_behav -key {Behavioral:sim_1:Functional:Task1_tb} -tclbatch {Task1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source Task1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Task1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Task1_tb_behav -key {Behavioral:sim_1:Functional:Task1_tb} -tclbatch {Task1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source Task1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Task1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Task1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'inst' on this module [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v:31]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'inst' on this module [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v:31]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'inst' on this module [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v:31]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Task1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.pcAdder
+Compiling module xil_defaultlib.immGen
+Compiling module xil_defaultlib.branchAdder
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.Task1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Task1_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Task1_tb_behav -key {Behavioral:sim_1:Functional:Task1_tb} -tclbatch {Task1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source Task1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v" Line 53
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Task1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.016 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\top_lab10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\Task1_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\InstructionMemory.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\registerfile.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\ProgramCounter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\mux2.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\branchAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sim_1\new\TopLevelProcessor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\pcAdder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\Semester 4\Computer Architecture\Labs\Lab 11\CA-labs-mm09736-spring-26--main\CA-labs-mm09736-spring-26--main\vivavo files\project_1.srcs\sources_1\new\immGen.v:]
+ERROR: [Common 17-180] Spawn failed: No such file or directory
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Task1_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/machine_code.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Task1_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 136214d76bf54cc4b2f9150d81700ac5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Task1_tb_behav xil_defaultlib.Task1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Task1_tb_behav -key {Behavioral:sim_1:Functional:Task1_tb} -tclbatch {Task1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source Task1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sim_1/new/Task1_tb.v" Line 53
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Task1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.016 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelProcessor
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1598.883 ; gain = 241.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'machine_code.mem' is read successfully [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+ERROR: [Synth 8-448] named port connection 'address' does not exist for instance 'imem_inst' of module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:32]
+ERROR: [Synth 8-439] module 'ControlUnit' not found [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:36]
+ERROR: [Synth 8-6156] failed synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1649.742 ; gain = 292.641
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+9 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelProcessor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1649.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'machine_code.mem' is read successfully [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+ERROR: [Synth 8-448] named port connection 'address' does not exist for instance 'imem_inst' of module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:32]
+ERROR: [Synth 8-439] module 'ControlUnit' not found [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:36]
+ERROR: [Synth 8-6156] failed synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1658.668 ; gain = 8.926
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+8 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelProcessor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1658.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'machine_code.mem' is read successfully [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (4#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (5#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (6#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:55]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (7#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:2]
+ERROR: [Synth 8-448] named port connection 'funct7' does not exist for instance 'logic_alu_ctrl' of module 'ALUControl' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:56]
+ERROR: [Synth 8-448] named port connection 'Operation' does not exist for instance 'logic_alu_ctrl' of module 'ALUControl' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:57]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+ERROR: [Synth 8-6156] failed synthesizing module 'mux2' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+ERROR: [Synth 8-6156] failed synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1660.480 ; gain = 1.812
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+17 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelProcessor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1660.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'machine_code.mem' is read successfully [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (4#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (5#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (6#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:3]
+INFO: [Synth 8-226] default block is never used [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (7#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+ERROR: [Synth 8-439] module 'ALU' not found [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:64]
+ERROR: [Synth 8-6156] failed synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1670.473 ; gain = 9.992
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+19 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close [ open {E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU.v} w ]
+add_files {{E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU.v}}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelProcessor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1670.473 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'machine_code.mem' is read successfully [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (4#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (5#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (6#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:3]
+INFO: [Synth 8-226] default block is never used [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (7#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'branchAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'branchAdder' (10#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v:2]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:77]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/DataMemory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (11#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/DataMemory.v:4]
+ERROR: [Synth 8-448] named port connection 'MemRead' does not exist for instance 'dmem_inst' of module 'DataMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:78]
+ERROR: [Synth 8-448] named port connection 'write_data' does not exist for instance 'dmem_inst' of module 'DataMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:79]
+ERROR: [Synth 8-448] named port connection 'read_data' does not exist for instance 'dmem_inst' of module 'DataMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:80]
+ERROR: [Synth 8-6156] failed synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1674.941 ; gain = 4.469
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+25 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelProcessor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1698.758 ; gain = 23.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ProgramCounter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/pcAdder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-3876] $readmem data file 'machine_code.mem' is read successfully [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (3#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/InstructionMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (4#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ControlUnit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (5#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/registerfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (6#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/immGen.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:3]
+INFO: [Synth 8-226] default block is never used [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (7#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'branchAdder' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'branchAdder' (10#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/branchAdder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (11#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelProcessor' (12#1) [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/sources_1/new/TopLevelProcessor.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1698.758 ; gain = 23.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1700.633 ; gain = 25.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1700.633 ; gain = 25.488
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1700.633 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1831.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1831.762 ; gain = 156.617
+29 Infos, 47 Warnings, 47 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1831.762 ; gain = 156.617
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Fri Apr  3 22:32:37 2026] Launched synth_1...
+Run output will be captured here: E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1831.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[*]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1831.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2623.613 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc:19]
+Finished Parsing XDC File [E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.srcs/constrs_1/new/lab10_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  6 15:57:50 2026...

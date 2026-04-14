@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Apr 13 14:07:53 2026
+# Process ID: 36896
+# Current directory: E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/xsim.dir/Project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/Semester 4/Computer Architecture/Labs/Lab 11/CA-labs-mm09736-spring-26--main/CA-labs-mm09736-spring-26--main/vivavo files/project_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/Semester -notrace
+couldn't read file "E:/Semester": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 13 14:07:53 2026...

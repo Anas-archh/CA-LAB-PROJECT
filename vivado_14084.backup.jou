@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Mar 17 13:42:10 2026
+# Process ID: 14084
+# Current directory: C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10448 C:\Users\Muhammad Murtaza\Desktop\unis shit\sem 4\CA\CA-labs-mm09736-spring-26-\vivavo files\project_1.xpr
+# Log file: C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/vivado.log
+# Journal file: C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/sources_1/new/ALU control.v} w ]
+add_files {{C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/sources_1/new/ALU control.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/sources_1/new/top_lab9.v} w ]
+add_files {{C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/sources_1/new/top_lab9.v}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_lab9 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/constrs_1/new/lab9_const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/constrs_1/new/lab9_const.xdc}}
+set_property is_enabled false [get_files  {{C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/constrs_1/new/lab8_const.xdc}}]
+set_property target_constrs_file {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/constrs_1/new/lab9_const.xdc} [current_fileset -constrset]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[15]} {led[14]} {led[13]} {led[12]} {led[11]} {led[10]} {led[9]} {led[8]} {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+place_ports {led[15]} L1
+place_ports {led[14]} P1
+place_ports {led[13]} N3
+place_ports {led[12]} A18
+place_ports {led[12]} P3
+place_ports {led[11]} U3
+place_ports {led[10]} W3
+place_ports {led[9]} V3
+startgroup
+set_property package_pin "" [get_ports [list  {led[2]}]]
+place_ports {led[8]} V13
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[1]}]]
+place_ports {led[8]} V14
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[0]}]]
+place_ports {led[7]} U14
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[4]}]]
+place_ports {led[6]} U15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[2]}]]
+place_ports {led[5]} W18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[3]}]]
+place_ports {led[4]} V19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[4]}]]
+place_ports {led[3]} U19
+endgroup
+place_ports {led[2]} E19
+place_ports {led[1]} U16
+startgroup
+set_property package_pin "" [get_ports [list  {led[1]}]]
+place_ports {led[0]} U16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[2]}]]
+place_ports {led[1]} E19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[3]}]]
+place_ports {led[2]} U19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[4]}]]
+place_ports {led[3]} V19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[5]}]]
+place_ports {led[4]} W18
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[6]}]]
+place_ports {led[5]} U15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[7]}]]
+place_ports {led[6]} U14
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {led[8]}]]
+place_ports {led[7]} V14
+endgroup
+place_ports {led[8]} V13
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sw[15]} {sw[14]} {sw[13]} {sw[12]} {sw[11]} {sw[10]} {sw[9]} {sw[8]} {sw[7]} {sw[6]} {sw[5]} {sw[4]} {sw[3]} {sw[2]} {sw[1]} {sw[0]}]]
+place_ports {sw[15]} R2
+place_ports {sw[14]} T1
+place_ports {sw[13]} U1
+place_ports {sw[12]} W2
+place_ports {sw[11]} R3
+place_ports {sw[10]} T2
+place_ports {sw[9]} T3
+place_ports {sw[8]} V2
+place_ports {sw[7]} W13
+place_ports {sw[6]} W14
+place_ports {sw[5]} V15
+place_ports {sw[4]} W15
+place_ports {sw[3]} W17
+place_ports {sw[2]} W16
+place_ports {sw[1]} V16
+place_ports {sw[0]} V17
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+place_ports clk W5
+place_ports rst U18
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.runs/impl_1/top_lab9.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.runs/impl_1/top_lab9.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.runs/impl_1/top_lab9.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.runs/impl_1/top_lab9.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/sim_1/new/control path_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/Muhammad Murtaza/Desktop/unis shit/sem 4/CA/CA-labs-mm09736-spring-26-/vivavo files/project_1.srcs/sim_1/new/control path_tb.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_control [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source tb_control.tcl
+update_compile_order -fileset sim_1
+open_run impl_1
+close_sim
